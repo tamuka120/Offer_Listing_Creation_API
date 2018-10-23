@@ -1,6 +1,6 @@
 # Offer_Listing_Creation_API
 
-Requirements:  
+**Requirements:**  
 Tomcat ^8.5  
 Postman(or alternative)  
 Note* Postman is required for requests such as POST and DELETE as browsers are not equipped to handle these types of requests.  
