@@ -24,7 +24,7 @@ http://localhost:8080/Offers/rest/create/table/sturdy/USD/1.99/0.01
 Note* To set the time, the input must be in the form of a double with decimals before the point representing hours(24 hr) and decimals after the point representing minutes. Expiration status of the offer will be set to true on creation by default but will set to false after specified time has passed.  
 
 **DELETE**  
-http://localhost:8080/Offers/rest/delete/0  
+http://localhost:8080/Offers/rest/delete/index  
 This request will allow the user to delete an offer from memory. An input value is required to choose the offer to delete. The index starts from 0, with new offers(elements) being inserted after the previous.
 
 
