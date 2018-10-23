@@ -1,0 +1,29 @@
+package package_offers;
+
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Interface_Methods implements Offer_Interface {
+
+	@Override
+	public String getTime() {
+		Date time = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("HH-mm");
+		String holder = sdf.format(time);
+		return holder;
+	}
+
+	@Override
+	public void setTime() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void cancelValidity() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package package_offers;
+
+import java.util.List;
+
+public interface Interface_namwqeqw {
+	
+	public String readURL(String URL);
+	
+	public boolean setExp();
+	
+	public List<OfferBean> GetOfferView();
+	
+
+}

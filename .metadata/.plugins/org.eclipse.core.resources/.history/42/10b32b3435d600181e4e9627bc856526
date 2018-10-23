@@ -1,0 +1,28 @@
+package package_offers;
+
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+//import java.util.Date;
+
+public class Interface_Methods implements Offer_Interface {
+
+	@Override
+	public long getTime() {
+//		Date time = new Date();
+//		SimpleDateFormat sdf = new SimpleDateFormat("HH-mm");
+//		String holder = sdf.format(time);
+		
+		Calendar calendar = Calendar.getInstance();
+		System.out.println(calendar.getTime());
+		long holder = calendar.getTime();//your current time in long (milliseconds)
+		return holder;
+	}
+
+	@Override
+	public void updateValidity() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

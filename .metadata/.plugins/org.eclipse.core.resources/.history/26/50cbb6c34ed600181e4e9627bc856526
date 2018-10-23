@@ -1,0 +1,29 @@
+package package_offers;
+
+public class Da {
+	ManageTime time = new ManageTime();
+	Offer = oglw2 = new Offer();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Da run = new Da();
+		run.waitMethod();
+	}
+	
+	
+	private synchronized void waitMethod() {
+		 
+		while (true) {
+			time.updateValidity(oglw2.
+					
+					Offer_List.get(0).getMins_Available());
+			try {
+				this.wait(2000);
+			} catch (InterruptedException e) {
+ 
+				e.printStackTrace();
+			}
+		}
+ 
+	}
+}

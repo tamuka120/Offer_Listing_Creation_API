@@ -1,0 +1,36 @@
+package package_offers;
+
+
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Interface_Methods implements Offer_Interface {
+
+	@Override
+	public String getTime() {
+		Date time = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("HH.mm");
+		String  holder = sdf.format(time);
+		return holder;
+	}
+
+	@Override
+	public void updateValidity(String t, int m) {
+		// TODO Auto-generated method stub
+		Date ctime = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("HH.mm");
+		String  holder = sdf.format(ctime);
+		
+		
+		double time = Double.valueOf(t);
+		double holder2 = Double.valueOf(holder);
+		
+		if (time + m == holder2 && time + m > holder2  ) {
+			Offer.Offer_List.get(0).setOffer_Available(false);
+			
+		}
+
+	}
+
+}

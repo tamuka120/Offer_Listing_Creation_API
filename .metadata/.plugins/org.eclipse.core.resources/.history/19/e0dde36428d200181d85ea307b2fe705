@@ -1,0 +1,43 @@
+package offer_package;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
+
+@Path("/Offer_Main")
+public class Offer_Main {
+	
+	@GET                 //Reads resource
+	@Produces(MediaType.TEXT_XML)
+	public String SayHelloXML() {
+		String resource = "<? xml version = '1.0' ?>" + 
+	"<hello> Returning Hello </hello>";
+		return resource;
+	}
+	
+	@GET                 //Reads resource
+	@Produces(MediaType.APPLICATION_JSON)
+	public String SayHelloJSON() {
+		String resource = null;
+		return resource;
+	}
+	
+	@GET                 //Reads resource
+	@Produces(MediaType.TEXT_HTML)
+	public String SayHelloHTML() {
+		String resource = null;
+		return resource;
+	}
+	
+	
+	
+	
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//
+//	}
+
+}

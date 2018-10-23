@@ -1,0 +1,43 @@
+package package_offers;
+
+import static org.junit.Assert.*;
+
+import java.util.List;
+
+import org.junit.Test;
+
+import com.sun.istack.internal.logging.Logger;
+
+import sun.util.logging.resources.logging;
+
+
+
+public class OfferServices_Test {
+	ManageTime time = new ManageTime();
+
+	@Test
+	public void testGetOfferView() {
+		OfferServices offerServices = new OfferServices();
+		List<OfferBean> result = offerServices.getOfferView();
+		
+		assertNotNull(result);
+	}
+
+	@Test
+	public void testCreateOffer() {
+		Logger log = Logger.getLogger(OfferServices_Test.class);
+		OfferServices offerServices = new OfferServices();
+		List<OfferBean> result = offerServices.CreateOffer("name", "description", "currency", 1.99, 0.01);
+		String[] expected = {"name"};
+		
+		log.info(result.get(0).getOffer_Name());
+		
+		assertEquals(expected, result.get(0).getOffer_Name());
+	}
+
+//	@Test
+//	public void testDeleteOffer() {
+//		fail("Not yet implemented");
+//	}
+
+}

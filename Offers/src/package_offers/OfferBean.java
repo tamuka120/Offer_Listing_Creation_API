@@ -1,0 +1,99 @@
+package package_offers;
+
+import java.io.Serializable;
+//import java.util.ArrayList;
+
+import javax.xml.bind.annotation.XmlElement; 
+import javax.xml.bind.annotation.XmlRootElement; 
+@XmlRootElement(name = "offer") 
+
+public class OfferBean implements Serializable {
+	private static final long serialVersionUID = 1L;
+	//Descriptors
+	private String Offer_Name;
+	private String Description;
+	
+	//Price
+	private String Currency;
+	private double Price;
+	
+	//availability
+	private double Mins_Available;
+	private String Time_Created;
+	private boolean Offer_Available;
+	
+	
+
+	public OfferBean() {}
+	
+	public OfferBean(String offer_Name, String description,  String currency, double price, double mins_Available,String time_created, boolean offer_Available) {
+		this.Offer_Name = offer_Name;
+		this.Description = description;
+		this.Currency = currency;
+		this.Price = price;
+		this.Mins_Available = mins_Available;
+		this.Time_Created = time_created;
+		this.Offer_Available = offer_Available;
+
+	}
+	
+	//Getters and Setters
+	public String getOffer_Name() {
+		return Offer_Name;
+	}
+	@XmlElement 
+	public void setOffer_Name(String offer_Name) {
+		this.Offer_Name = offer_Name;
+	}
+
+	public String getDescription() {
+		return Description;
+	}
+	@XmlElement 
+	public void setDescription(String description) {
+		this.Description = description;
+	}
+
+	public String getCurrency() {
+		return Currency;
+	}
+	@XmlElement 
+	public void setCurrency(String currency) {
+		this.Currency = currency;
+	}
+
+	public double getPrice() {
+		return Price;
+	}
+	@XmlElement 
+	public void setPrice(double price) {
+		this.Price = price;
+	}
+
+	public double getMins_Available() {
+		return Mins_Available;
+	}
+	@XmlElement 
+	public void setMins_Available(double mins_Available) {
+		this.Mins_Available = mins_Available;
+	}
+	
+	public String getTime_Created() {
+		return Time_Created;
+	}
+	
+	@XmlElement 
+	public void setTime_Created(String time_Created) {
+		Time_Created = time_Created;
+	}
+
+	public boolean isOffer_Available() {
+		return Offer_Available;
+	}
+	@XmlElement 
+	public void setOffer_Available(boolean offer_Available) {
+		this.Offer_Available = offer_Available;
+	}
+
+
+}

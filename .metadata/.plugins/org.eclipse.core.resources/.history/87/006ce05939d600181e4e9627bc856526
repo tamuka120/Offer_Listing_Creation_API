@@ -1,0 +1,31 @@
+package package_offers;
+
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Interface_Methods implements Offer_Interface {
+
+	@Override
+	public Date getTime() {
+		Date date1 = null;
+		Date time = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+		String  holder = sdf.format(time);
+		try {
+			date1=new SimpleDateFormat("HH:mm").parse(holder);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}  
+		return date1;
+	}
+
+	@Override
+	public void updateValidity() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

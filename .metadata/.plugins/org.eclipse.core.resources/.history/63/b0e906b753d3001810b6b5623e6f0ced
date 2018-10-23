@@ -1,0 +1,25 @@
+package package_offers;
+
+import java.util.Date;
+
+public class Interface_Methods implements Offer_Interface {
+
+	@Override
+	public Date getTime() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setTime() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void cancelValidity() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

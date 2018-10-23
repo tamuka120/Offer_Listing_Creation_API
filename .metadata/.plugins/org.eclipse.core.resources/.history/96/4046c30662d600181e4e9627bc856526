@@ -1,0 +1,52 @@
+package package_offers;
+
+import static org.junit.Assert.*;
+
+import java.util.List;
+import java.util.logging.Logger;
+
+import org.junit.Rule;
+import org.junit.Test;
+
+import junit.framework.Assert;
+
+
+
+
+
+
+
+public class OfferServices_Test {
+	
+
+//	@Test
+//	public void testGetOfferView() {
+//		OfferServices offerServices = new OfferServices();
+//		List<OfferBean> result = offerServices.getOfferView();
+//		
+//		assertNotNull(result);
+//	}
+
+//	@Test
+//	public void testCreateOffer() {
+//		
+//		OfferServices offerServices = new OfferServices();
+//		List<OfferBean> oBean = offerServices.CreateOffer("nameassd", "descripasdtion", "asdcurrency", 1.99, 1.01);
+//		
+//		String expected = "name";
+//		String result = oBean.get(0).getOffer_Name();
+//		
+//		
+//		assertEquals(expected, result);
+//	}
+
+	@Test
+	public void testDeleteOffer() {
+		OfferServices offerServices = new OfferServices();
+		offerServices.CreateOffer("nameassd", "descripasdtion", "asdcurrency", 1.99, 1.01);
+		List<OfferBean> oBean = offerServices.DeleteOffer(0);
+		
+		assertNotNull(oBean.get(0).getOffer_Name());
+	}
+
+}

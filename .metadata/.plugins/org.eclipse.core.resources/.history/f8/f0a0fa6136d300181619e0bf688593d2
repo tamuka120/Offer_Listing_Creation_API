@@ -1,0 +1,25 @@
+package package_offers;
+
+import java.util.List;
+
+public class Implement implements Interface_namwqeqw {
+
+	@Override
+	public String readURL(String URL) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean setExp() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<OfferBean> GetOfferView() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,29 @@
+package package_offers;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class Offer_Test {
+
+	@Test
+	public void testGetAllOffers() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testCreateOffer() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testDeleteOffer() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testUpdateOffer() {
+		fail("Not yet implemented");
+	}
+
+}

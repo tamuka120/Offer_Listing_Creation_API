@@ -1,0 +1,7 @@
+package package_offers;
+
+public interface Jkl_int {
+	
+	public String getURL();
+
+}

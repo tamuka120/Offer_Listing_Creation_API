@@ -1,0 +1,11 @@
+package package_offers;
+
+public class Imp implements Jkl_int {
+
+	@Override
+	public String getURL() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

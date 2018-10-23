@@ -1,0 +1,47 @@
+package package_offers;
+
+
+import java.util.*;
+import javax.ws.rs.Produces;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.core.MediaType;
+
+
+//import java.io.BufferedReader;
+//import java.io.InputStreamReader;
+//import java.net.URL;
+//import java.net.URLConnection;
+//import java.nio.charset.Charset;
+
+@Path("/")
+public class OfferServices {
+	Offer offer = new Offer(); // Create object for Offer Class
+	
+	
+	//Queries
+	@GET                 	               //Reads Resources
+	@Path("/view")
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<OfferBean> getOfferView(String s){ //constructor to return all offers to view
+		return offer.GetAllOffers(s);
+		}
+	
+	
+	@POST            		              //Post Resource
+	@Path("/create")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public List<OfferBean> CreateOffer(){ 
+		return offer.CreateOffer();
+		}
+	
+	@DELETE            		              //Delete Resource
+	@Path("/delete")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public List<OfferBean> DeleteOffer(){ 
+		return offer.DeleteOffer(0);
+		}
+}

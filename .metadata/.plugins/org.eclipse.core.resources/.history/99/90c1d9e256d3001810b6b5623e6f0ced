@@ -1,0 +1,14 @@
+package package_offers;
+
+
+public interface Offer_Interface {
+
+public String getTime(); 
+
+public void setTime();
+
+public void cancelValidity();
+
+
+
+}

@@ -1,0 +1,83 @@
+package package_offers;
+
+import java.io.Serializable;
+
+public class Offer_main implements Serializable {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	//Descriptors
+	private String Offer_Name;
+	private String Description;
+	
+	//Price
+	private String Currency;
+	private double Price;
+	
+	//availability
+	private int Mins_Available;
+	private boolean Offer_Available;
+
+	public Offer_main() {}
+	
+	public Offer_main(String offer_Name, String description,  String currency, double price, int mins_Available, boolean offer_Available) {
+		this.setOffer_Name(offer_Name);
+		this.setDescription(description);
+		this.setCurrency(currency);
+		this.setPrice(price);
+		this.setMins_Available(mins_Available);
+		this.setOffer_Available(offer_Available);
+	}
+	
+	//Getters and Setters
+	public String getOffer_Name() {
+		return Offer_Name;
+	}
+
+	public void setOffer_Name(String offer_Name) {
+		Offer_Name = offer_Name;
+	}
+
+	public String getDescription() {
+		return Description;
+	}
+
+	public void setDescription(String description) {
+		Description = description;
+	}
+
+	public String getCurrency() {
+		return Currency;
+	}
+
+	public void setCurrency(String currency) {
+		Currency = currency;
+	}
+
+	public double getPrice() {
+		return Price;
+	}
+
+	public void setPrice(double price) {
+		Price = price;
+	}
+
+	public int getMins_Available() {
+		return Mins_Available;
+	}
+
+	public void setMins_Available(int mins_Available) {
+		Mins_Available = mins_Available;
+	}
+
+	public boolean isOffer_Available() {
+		return Offer_Available;
+	}
+
+	public void setOffer_Available(boolean offer_Available) {
+		Offer_Available = offer_Available;
+	}
+
+}

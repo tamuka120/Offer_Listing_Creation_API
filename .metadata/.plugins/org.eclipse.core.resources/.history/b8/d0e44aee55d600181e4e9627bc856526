@@ -1,0 +1,24 @@
+package package_offers;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class OfferServices_Test {
+
+	@Test
+	public void testGetOfferView() {
+		
+	}
+
+	@Test
+	public void testCreateOffer() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testDeleteOffer() {
+		fail("Not yet implemented");
+	}
+
+}

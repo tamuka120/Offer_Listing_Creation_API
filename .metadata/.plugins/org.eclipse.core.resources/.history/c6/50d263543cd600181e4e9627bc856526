@@ -1,0 +1,51 @@
+package package_offers;
+
+import java.util.List;
+
+//import javax.ws.rs.DefaultValue;
+//import javax.ws.rs.QueryParam;
+
+//import javax.ws.rs.PathParam;
+
+//import java.io.BufferedReader;
+//import java.io.InputStream;
+//import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+//import java.util.Arrays; 
+
+
+
+
+
+
+public class Offer {
+	OfferBean oBean = new OfferBean();
+	public static ArrayList<OfferBean> Offer_List = new ArrayList<OfferBean>();
+	Interface_Methods i = new Interface_Methods();
+
+
+	
+	public List<OfferBean> GetAllOffers(){ // 
+		i.updateValidity();
+		return Offer_List;
+	}
+	
+
+	public List<OfferBean> CreateOffer(String name, String description,String currency,double price,int exp_limit){
+		OfferBean offerHolder = new OfferBean(name,description, currency, price, exp_limit, i.getTime() , true); 
+		Offer_List.add(offerHolder);
+        return null;
+	}
+	
+	public List<OfferBean> DeleteOffer(int index){
+        Offer_List.remove(index);
+		return null;
+	}
+
+	public List<OfferBean> UpdateOffer(){
+        return Offer_List;
+	}
+	
+	
+}// Class

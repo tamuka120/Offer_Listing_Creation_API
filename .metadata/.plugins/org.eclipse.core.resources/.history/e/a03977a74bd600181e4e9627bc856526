@@ -1,0 +1,39 @@
+package package_offers;
+
+import java.util.List;
+import java.util.ArrayList;
+
+
+public class Offer {
+	public static ArrayList<OfferBean> Offer_List = new ArrayList<OfferBean>();
+	ManageTime i = new ManageTime();
+
+
+	
+	public List<OfferBean> GetAllOffers(){ // 
+		i.updateValidity(Offer_List.get(0).getTime_Created(), Offer_List.get(0).getMins_Available());
+		return Offer_List;
+	}
+	
+
+	public List<OfferBean> CreateOffer(String name, String description,String currency,double price,double exp_limit){
+		OfferBean offerHolder = new OfferBean(name,description, currency, price, exp_limit, i.getTime() , true); 
+		
+		Offer_List.add(offerHolder);
+        return null;
+	}
+	
+	public List<OfferBean> DeleteOffer(int index){
+        Offer_List.remove(index);
+		return null;
+	}
+
+	public List<OfferBean> UpdateOffer(){
+        return Offer_List;
+	}
+	
+	public void main(String[] args) {
+		
+	}
+	
+}// Class

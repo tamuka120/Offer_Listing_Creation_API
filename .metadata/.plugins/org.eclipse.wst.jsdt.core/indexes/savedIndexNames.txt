@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\tamuk\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1407712470.index
+267865331.index
+355597327.index
+1487635283.index
+1886192739.index
+200605994.index

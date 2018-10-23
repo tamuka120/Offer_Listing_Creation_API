@@ -1,0 +1,25 @@
+1539794276680	Delete element
+1539797192345	Encapsulate field 'Offer_Name'
+1539797305134	Encapsulate field 'Description'
+1539797317395	Encapsulate field 'Currency'
+1539797388319	Encapsulate field 'Price'
+1539797407083	Encapsulate field 'Mins_Available'
+1539797415515	Encapsulate field 'Offer_Available'
+1539797475173	Encapsulate field 'Currency'
+1539797493410	Encapsulate field 'Price'
+1539797505490	Encapsulate field 'Mins_Available'
+1539797515952	Encapsulate field 'Offer_Available'
+1539800391152	Rename type 'Offer_Queries'
+1539814892893	Rename type 'Offer_queries'
+1539815376748	Rename type 'Offer_Services'
+1539815391431	Rename type 'Offer_logic'
+1539815808170	Rename type 'OfferBean'
+1539815844125	Rename type 'Offer_main'
+1539816020247	Rename field 'o_Logic'
+1539906641523	Delete element
+1539909116057	Delete element
+1539909122959	Delete element
+1539917845704	Delete element
+1539919179249	Delete element
+1539919184717	Delete element
+1539921984348	Encapsulate field 'Time_Created'
